@@ -3,13 +3,13 @@
     border-width: 1px;
     border-style: solid;
 }
-divTwo{
+.divTwo{
 border-width: 5px;
 border-style: solid;
 border-color: green;
 
 }
-divThree{
+.divThree{
     border-width: 2px;
     border-right-style: double;
     border-right-color: navy;
