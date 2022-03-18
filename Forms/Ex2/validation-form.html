@@ -54,6 +54,14 @@
             position:absolute;
             z-index: 1;
         }
+        input:valid,
+        textarea:valid {
+            border-bottom: 1px solid green;
+        }
+        input:invalid,
+        textarea:invalid {
+            border-bottom: 1px solid red;
+        }
     </style>
 </head>
 <body>
@@ -66,10 +74,14 @@
         </div>
         <div>
             <label for="last_name">Last name</label><br>
-            <input type="text" name="lastname" id="last_name" placeholder="your last name" required>
+            <input type="last_name" name="lastname" id="lastname" placeholder="your last name" required>
          
         </div>
         <div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="your email" required>
+            </div>
             <label for="country">Country:</label><br>
             <div class="select-wrapper">
             <select name="country" id="country" >
