@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  font-weight: bold;
+  padding: 15px;
+}
+
+body {
+  background-color: #edf6f8;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: #f2a062;
+  width: 100%;
+}
+
+aside {
+  background-color: #f6bd62;
+  width: 20%;
+  height: 400px;
+}
+
+main {
+  background-color: #8eabc0;
+  color: white;
+  width: 80%;
+  height: 400px;
+}
+
+footer {
+  background-color: #b7ce3f;
+  width: 100%;
+}
