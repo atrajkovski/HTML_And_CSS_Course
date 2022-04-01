@@ -1,9 +1,16 @@
+/*
+Author: Aleksandra Trajkovski
+Date: 31.03.2022
+File Name: styles.css
+*/
+
 body,
 header,
 nav,
 main,
 footer,
 h1,
+ul,
 div,
 img {
   margin: 0;
@@ -11,30 +18,43 @@ img {
   border: 0;
 }
 
+/*Style rules for body and images */
 body {
-  background-color: #ccc;
+  background-color: #000;
 }
+img {
+  max-width: 100%;
+  display: block;
+}
+/*Style rules for mobile viewport */
 
+/*Style rule for header */
 header {
-  float: left;
-  width: 25%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 190px;
+  z-index: 1;
 }
-
+header img {
+  margin: 0 auto;
+}
+/*Style rule for navigation area */
 nav {
-  float: right;
-  margin: 5em 3em 0 0;
-  width: 70%;
+  padding: 1%;
+  margin-bottom: 1%;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  text-align: right;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline-block;
-  font-size: 1.75em;
+  font-size: 1.5em;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 nav ul li a {
@@ -44,7 +64,7 @@ nav ul li a {
   padding: 0.5em 1em;
   text-decoration: none;
 }
-
+/* Style rules for main content */
 main,
 weights {
   clear: both;
@@ -102,8 +122,9 @@ ul .arrowbullets {
   background-color: #f2f2f2;
   padding: 1% 2%;
 }
+
 #exercise dl {
-  font-weight: hold;
+  font-weight: bold;
 }
 
 #exercises dd {
@@ -126,7 +147,7 @@ contact a {
 .map {
   border: 8px solid #000;
 }
-
+/* Style rules for footer p */
 footer p {
   font-size: 0.75em;
   text-align: center;
