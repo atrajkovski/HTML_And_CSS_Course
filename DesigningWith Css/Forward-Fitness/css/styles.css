@@ -53,28 +53,62 @@ nav ul {
 
 nav ul li {
   font-size: 1.5em;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: bold;
+ /* font-family:  sans-serif */
+  font-family: 'Fransois one', serif;
+  border-top: 1px solid #fff;
+}
+nav ul li:first-child {
+  border-top: none;
 }
 
 nav ul li a {
   display: block;
   color: #fff;
-  text-align: center;
   padding: 0.5em 1em;
   text-decoration: none;
 }
+/* Show mobile class,hide tablet-desktop class*/
+.mobile {
+  display: block; 
+}
+
+.tablet-desktop {
+  display: none;
+}
+
 /* Style rules for main content */
 main,
 weights {
   clear: both;
 }
 
+
+/*Styles rules for main content*/
 main {
-  clear: left;
   background-color: #fff;
   padding: 2%;
-  font-size: 1.25em;
+  font-size: 1.15em;
+  font-family: 'Roboto Slab', serif;
+
+}
+.tel-link {
+  background-color: #404040;
+  padding: 2%;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  display: block;
+}
+
+.hours {
+  margin-left: 10%;
 }
 
 h1 {
@@ -104,15 +138,13 @@ ul .arrowbullets {
   list-style-image: url(/images/arrow.png);
 }
 .action {
-  font-size: 1.35;
+  font-size: 1.35em;
   color: #666600;
   font-weight: bold;
 }
 #weights,
 #cardio,
 #training {
-  width: 29%;
-  float: left;
   margin: 0.2%;
 }
 #exercises {
@@ -123,7 +155,7 @@ ul .arrowbullets {
   padding: 1% 2%;
 }
 
-#exercise dl {
+#exercise dt {
   font-weight: bold;
 }
 
@@ -134,9 +166,9 @@ ul .arrowbullets {
   text-align: center;
 }
 
-contact a {
+#contact .contact-email-link {
   color: #666600;
-  font-weight: bold;
+  text-decoration: none;
 }
 
 .external-link {
@@ -145,7 +177,9 @@ contact a {
   text-decoration: none;
 }
 .map {
-  border: 8px solid #000;
+  border: 2px solid #000;
+  width:95%;
+  height:50%;
 }
 /* Style rules for footer p */
 footer p {
