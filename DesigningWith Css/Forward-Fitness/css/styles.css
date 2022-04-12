@@ -4,7 +4,7 @@ Date: 31.03.2022
 File Name: styles.css
 */
 
-/*CSS Reset
+/*CSS Reset */
 body,
 header,
 nav,
@@ -13,10 +13,17 @@ footer,
 h1,
 ul,
 div,
+figure,
+figcaption 
 img {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+/* Style rule for box sizing applies for all elements */
+* {
+  box-sizing: border-box;
 }
 
 /*Style rules for body and images */
@@ -28,14 +35,13 @@ img {
   display: block;
 }
 /*Style rules for mobile viewport */
+/*Style rule for header*/
 header {
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   background-color: #000;
   height: 190px;
-  z-index: 1;
 }
+
 header img {
   margin: 0 auto;
 }
@@ -78,11 +84,14 @@ nav ul li a:hover {
 
 /* Style rules for main content */
 main {
-  clear: left;
   font-size: 1.15em;
   padding: 2%;
   background-color: #fff;
   font-family: "Roboto Slab", serif;
+}
+
+.mobile h3 {
+  text-shadow: 5px 5px 8px #ccc;
 }
 .tel-link {
   background-color: #404040;
@@ -128,6 +137,7 @@ ul .arrowbullets {
 #training {
   margin: 0.2%;
 }
+
 .round {
   border-radius: 8px;
 }
@@ -144,6 +154,11 @@ ul .arrowbullets {
   text-decoration: none;
 }
 
+.grid-item4 {
+  grid-column: 1 / span 3;
+}
+   
+
 .map {
   border: 2px solid #000;
   width:95%;
@@ -157,11 +172,11 @@ ul .arrowbullets {
   text-decoration: none;
 }
 
-/* Style rules for the footer */
+/* Style rules for footer content */
 footer p {
   font-size: 0.75em;
   text-align: center;
-  color:white;
+  color: #fff;
   padding: 0 1em;
 }
 footer p a {
@@ -181,7 +196,6 @@ footer p a {
 
 /*Tablet Viewport: Style rule for header */ 
 header {
-  position: static;
   padding-bottom: 2%;
 }
 
@@ -201,6 +215,22 @@ nav ul li a {
 /* Tablet Viewport: Style rules for main content area */
 main ul {
   margin: 0 0 4% 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+.frame {
+  position: relative;
+  max-width: 450px;
+  margin:2% auto;
+}
+.pic-text {
+  font-size: 1em;
+  padding: 10px;
 }
 
 #exercises {
@@ -224,8 +254,9 @@ main ul {
    font-size: 1.25em;
 }
 .map {
-  width: 600px;
-  height: 450px;
+  width: 95%;
+  height: 50%;
+  border: 2px solid #000;
 }
 }
 
@@ -258,6 +289,26 @@ main {
 }
 main h1 {
   font-size: 1.8em;
+}
+.pic-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.frame {
+  opacity: 0.9;
+}
+
+.frame:hover {
+  opacity: 1;
+  box-shadow: 8px 8px 10px #808080;
 }
 
 #weights, #cardio, #training {
