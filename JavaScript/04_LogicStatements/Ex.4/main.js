@@ -31,7 +31,7 @@ switch (randomNumber) {
         message = "Try one more time!";
         break;
     case 5:
-        message = "Next time!";
+        message = "Next life!";
         break;
 }
 
